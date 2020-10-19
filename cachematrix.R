@@ -1,3 +1,5 @@
+## This function assigns the inverse of the matrix for the first time
+## and it saves it in a variable setInverse
 makeCacheMatrix <- function(x = matrix()) {
     j <- NULL
     
@@ -17,8 +19,9 @@ makeCacheMatrix <- function(x = matrix()) {
          getInverse = getInverse)
 }
 
-##Please include your own comment to explain your code (Required in Rubric)
-
+## This function evaluates if getInverse is already calculated
+## and displays the message "getting cache data"
+## otherwise it calculates the inverse 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x' 
     ## got the result from makeCachematrix
